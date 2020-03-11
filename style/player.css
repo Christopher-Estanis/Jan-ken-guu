@@ -1,0 +1,45 @@
+.battle-display {
+  border: solid white 2px;
+  border-top: none;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.player {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.life-label {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 10%;
+  flex-direction: column;
+}
+
+.life-bar {
+  border: 1px solid #fff;
+  width: 70%;
+  height: 6%;
+  margin-top: 10px;
+  align-self: center;
+}
+.health1 {
+  width: 100%;
+  height: 100%;
+  background-color: #dc143c;
+}
+.health2 {
+  width: 100%;
+  float: right;
+  height: 100%;
+  background-color: #dc143c;
+}
+.player-name {
+  font-size: 1.3em;
+  margin-left: 15%;
+  margin-top: 1%;
+}

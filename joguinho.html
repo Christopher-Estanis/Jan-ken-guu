@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/player.css">
+    <link rel="stylesheet" href="style/skill.css">
+    <title>Joguinho</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Joguinho!</h1>
+        </div>
+        <div class="battle-display">
+            <div class="player">
+                <label class="life-label">
+                    <div class="life-bar">
+                        <div class="health1" id="p1-life"></div>
+                    </div>
+                    <p class="player-name" id="p1-name"></p>
+                </label>
+                <div class="battle-scene">
+
+                </div>
+            </div>
+
+            <div class="player">
+                <label class="life-label">
+                    <div class="life-bar">
+                        <div class="health2" id="p2-life"></div>
+                    </div>
+                    <p class="player-name" id="p2-name"></p>
+                </label>
+                <div class="battle-scene">
+
+                </div>
+            </div>
+        </div>
+        <div class="skill-display">
+            <div class="col">
+                <div class="charges">
+                    <div class="charge-count" id="quickAttack-charges1"></div>
+                    <div class="charge-count" id="quickAttack-charges2"></div>
+                    <div class="charge-count" id="quickAttack-charges3"></div>
+                </div>
+                <div class="skill-icon">
+
+                </div>
+                <p class="skill-name">
+                    Quick Atack
+                </p>
+            </div>
+            <div class="col">
+                <div class="charges">
+                    <div class="charge-count" id="strongAttack-charges1"></div>
+                    <div class="charge-count" id="strongAttack-charges2"></div>
+                    <div class="charge-count" id="strongAttack-charges3"></div>
+                </div>
+                <div class="skill-icon">
+
+                </div>
+                <p class="skill-name">
+                    Strong Atack
+                </p>
+            </div>
+            <div class="col">
+                <div class="charges">
+                    <div class="charge-count" id="defense-charges1"></div>
+                    <div class="charge-count" id="defense-charges2"></div>
+                    <div class="charge-count" id="defense-charges3"></div>
+                </div>
+                <div class="skill-icon">
+
+                </div>
+                <p class="skill-name">
+                    Defense
+                </p>
+            </div>
+            <div class="col">
+                <div class="charges">
+                    <div class="charge-count" id="dodge-charges1"></div>
+                    <div class="charge-count" id="dodge-charges2"></div>
+                    <div class="charge-count" id="dodge-charges3"></div>
+                </div>
+                <div class="skill-icon" onclick="bostinha(this)" id="0">
+
+                </div>
+                <p class="skill-name">
+                    Dodge
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/character.js"></script>
+    <script src="scripts/onLoad.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
