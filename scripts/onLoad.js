@@ -21,10 +21,16 @@ function drawLife(name, player) {
 
 function drawCharges(name) {
   for(let i = 0 ; i <= 3 ; i++) {
+    const maxCharges = name.AttackList[i].maxCharges;
     const numCharges = name.AttackList[i].numCharges;
     const nameAtack = name.AttackList[i].name;
-    for(let i = 1 ; i <= numCharges ; i++) {
-      document.getElementById(`${nameAtack}-charges${i}`).style.backgroundColor = "#fff";
+    for(let i = 1 ; i <= maxCharges ; i++) {
+      if(i <= numCharges) {
+        document.getElementById(`${nameAtack}-charges${i}`).style.backgroundColor = "#fff";
+      }
+      else {
+        document.getElementById(`${nameAtack}-charges${i}`).style.backgroundColor = "#000";
+      }
     }
   }
 }

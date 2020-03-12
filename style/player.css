@@ -19,11 +19,15 @@
   height: 10%;
   flex-direction: column;
 }
+.battle-scene {
+  flex: 1;
+  display: flex;
+}
 
 .life-bar {
   border: 1px solid #fff;
   width: 70%;
-  height: 6%;
+  height: 10%;
   margin-top: 10px;
   align-self: center;
 }
@@ -42,4 +46,10 @@
   font-size: 1.3em;
   margin-left: 15%;
   margin-top: 1%;
+}
+
+.character {
+  align-self: center;
+  width: 60%;
+  height: 85%;
 }

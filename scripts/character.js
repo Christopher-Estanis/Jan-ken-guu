@@ -3,38 +3,42 @@ const quickAttack = 0, defense = 1 ,strongAttack = 2, dodge = 3;
 class character{
   constructor(name){
       this.characterName = name;
-      this.health = 100;
+      this.health = 90;
       this.isStunned = false;
       this.AttackList = 
       [
           {
               name: 'quickAttack',
-              damage: 10,
+              damage: 5,
+              maxCharges: 3,
               numCharges: 3,
               roundCount: 0
           },
           {
               name: 'defense',
               damage: 0,
+              maxCharges: 3,
               numCharges: 3,
               roundCount: 0
           },
           {
               name: 'strongAttack',
               damage: 10,
+              maxCharges: 3,
               numCharges: 3,
               roundCount: 0
           },
           {
               name: 'dodge',
               damage: 0,
+              maxCharges: 3,
               numCharges: 3,
               roundCount: 0
           }
       ];
   }
   
-  //Target é um objeto da mesma classe "Character", attackType e CounterAttack são cosntantes pré definidas no inicio do código
+  // Target é um objeto da mesma classe "Character", attackType e CounterAttack são cosntantes pré definidas no inicio do código
   attack(target,attackType,counterAttack){        
       switch (attackType) {   
           case quickAttack:
